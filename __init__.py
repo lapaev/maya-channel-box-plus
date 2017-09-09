@@ -41,10 +41,10 @@ def install(threshold=0.75):
     
     :param float threshold: Threshold for attribute colour change
     """
-	# get channel box
+    # get channel box
     channelBox = ui.getChannelBox()
 	
-	# get channel box layout
+    # get channel box layout
     parent = channelBox.parent()
     layout = parent.layout()
     layout.setSpacing(0)
@@ -56,13 +56,13 @@ def install(threshold=0.75):
     for name, child in zip(names, children):
         if name != ui.CHANNELBOXS_SEARCH:
             continue
-		
+
         child.deleteLater()
     
-	# initialize search widget
+    # initialize search widget
     search = ui.SearchWidget(parent, threshold)
-    
-	# add search widget to layout
+
+    # add search widget to layout
     if type(layout) == ui.QLayout:
         item = layout.itemAt(0)
         widget = item.widget()

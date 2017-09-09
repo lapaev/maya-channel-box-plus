@@ -198,7 +198,6 @@ class SearchWidget(QWidget):
         :param str matchString: Search string to match with attributes
         :param list nodes: List of nodes to process the attributes from
         """
-        
         # reset of search string is empty
         if not matchString:
             cmds.channelBox(CHANNELBOX, edit=True, fixedAttrList=[])
