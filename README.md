@@ -1,7 +1,7 @@
 # rjChannelBoxPlus
 rjChannelBoxPlus will add search-ability over its attributes and it will colour user defined attributes, making them easier to distinguish. With the threshold argument you can determine when to switch between colours, the higher the threshold the more the 2 attributes will have to match up to stay the same colour.
 
-![Alt Text](https://github.com/robertjoosten/rjChannelBoxPlus/blob/master/README.gif)
+<p align="center"><img src="https://github.com/robertjoosten/rjChannelBoxPlus/blob/master/README.gif"></p>
 
 ## Installation
 Copy the **rjChannelBoxPlus** folder to your Maya scripts directory:
