@@ -1,0 +1,7 @@
+rjChannelBoxPlus\.colours module
+================================
+
+.. automodule:: rjChannelBoxPlus.colours
+    :members:
+    :undoc-members:
+    :show-inheritance:

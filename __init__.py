@@ -1,28 +1,45 @@
-"""					
-I N S T A L L A T I O N:
-    Copy the "rjChannelBoxPlus" folder to your Maya scripts directory:
-        C:\Users\<USER>\Documents\maya\scripts
+"""		
+rjChannelBoxPlus will add search-ability over its attributes and it will 
+colour user defined attributes, making them easier to distinguish. With 
+the threshold argument you can determine when to switch between colours, 
+the higher the threshold the more the 2 attributes will have to match up 
+to stay the same colour.
 
-U S A G E:
-    Add the interface and functionality to Maya:
-        import maya.cmds as cmds
-        cmds.evalDeferred(
-            "import rjChannelBoxPlus;rjChannelBoxPlus.install(threshold=0.75)"
-        )
-    
-    This line of code can also be added in the userSetup.py if you would like 
-    the functionality to persist.
+.. figure:: https://github.com/robertjoosten/rjChannelBoxPlus/raw/master/README.gif
+   :align: center
 
-N O T E:
-    rjChannelBoxPlus will add search-ability over its attributes and it will 
-    colour user defined attributes, making them easier to distinguish. With 
-    the threshold argument you can determine when to switch between colours, 
-    the higher the threshold the more the 2 attributes will have to match up 
-    to stay the same colour.
+Installation
+============
+Copy the **rjChannelBoxPlus** folder to your Maya scripts directory
+::
+    C:/Users/<USER>/Documents/maya/scripts
+
+Usage
+=====
+Add the interface and functionality to Maya:
+::
+    import maya.cmds as cmds
+    cmds.evalDeferred(
+        "import rjChannelBoxPlus;rjChannelBoxPlus.install(threshold=0.75)"
+    )
     
-    Colour palette can be updated in the colour.py file that is located in
-    this package, simply change the colour values or add new ones following
-    the same format.
+This line of code can also be added in the userSetup.py if you would like the 
+functionality to persist.
+
+Note
+====
+rjChannelBoxPlus will add search-ability over its attributes and it will 
+colour user defined attributes, making them easier to distinguish. With the 
+threshold argument you can determine when to switch between colours, the 
+higher the threshold the more the 2 attributes will have to match up to stay 
+the same colour.
+
+Colour palette can be updated in the colour.py file that is located in this 
+package, simply change the colour values or add new ones following the same 
+format.
+
+Code
+====
 """
 
 __author__    = "Robert Joosten"

@@ -1,0 +1,18 @@
+rjChannelBoxPlus package
+========================
+
+Submodules
+----------
+
+.. toctree::
+
+   rjChannelBoxPlus.colours
+   rjChannelBoxPlus.ui
+
+Module contents
+---------------
+
+.. automodule:: rjChannelBoxPlus
+    :members:
+    :undoc-members:
+    :show-inheritance:
