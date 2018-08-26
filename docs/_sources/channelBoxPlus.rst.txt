@@ -1,0 +1,16 @@
+channelBoxPlus package
+======================
+
+.. automodule:: channelBoxPlus
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+
+   channelBoxPlus.colours
+   channelBoxPlus.ui
+

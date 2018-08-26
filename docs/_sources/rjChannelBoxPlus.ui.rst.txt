@@ -1,7 +1,0 @@
-rjChannelBoxPlus\.ui module
-===========================
-
-.. automodule:: rjChannelBoxPlus.ui
-    :members:
-    :undoc-members:
-    :show-inheritance:

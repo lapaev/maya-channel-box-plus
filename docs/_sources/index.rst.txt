@@ -1,10 +1,10 @@
-.. rjChannelBoxPlus documentation master file, created by
-   sphinx-quickstart on Sun Oct 08 23:44:33 2017.
+.. channelBoxPlus documentation master file, created by
+   sphinx-quickstart on Sun Aug 26 18:42:45 2018.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to rjChannelBoxPlus's documentation!
-============================================
+Welcome to channelBoxPlus's documentation!
+==========================================
 
 .. toctree::
    :maxdepth: 2

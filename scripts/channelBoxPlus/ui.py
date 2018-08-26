@@ -1,5 +1,12 @@
-from maya import OpenMaya, OpenMayaUI, cmds, mel
 import difflib
+from maya import OpenMaya, OpenMayaUI, cmds, mel
+
+# import colour palette
+from .colours import USER_COLOURS, DIVIDER_COLOUR
+
+
+# ----------------------------------------------------------------------------
+
 
 # import pyside, do qt version check for maya 2017 >
 qtVersion = cmds.about(qtVersion=True)
@@ -12,16 +19,21 @@ else:
     from PySide2.QtCore import *
     from PySide2.QtWidgets import *
     import shiboken2 as shiboken
-    
-# import colour palette
-from .colours import USER_COLOURS, DIVIDER_COLOUR
-     
-# ui object names
-CHANNELBOX = "mainChannelBox"
-CHANNELBOXS_SEARCH = "mainChannelBoxSearch"
+
 
 # ----------------------------------------------------------------------------
-    
+
+
+global CHANNELBOX_PLUS
+CHANNELBOX_PLUS = None
+
+CHANNELBOX = "mainChannelBox"
+CHANNELBOX_SEARCH = "mainChannelBoxSearch"
+
+
+# ----------------------------------------------------------------------------
+
+
 def mayaToQT(name):
     """
     Maya -> QWidget
@@ -37,7 +49,8 @@ def mayaToQT(name):
         ptr = OpenMayaUI.MQtUtil.findMenuItem( name )
     if ptr is not None:     
         return shiboken.wrapInstance( long( ptr ), QWidget )
-    
+
+
 def qtToMaya(widget):
     """
     QWidget -> Maya name
@@ -52,7 +65,9 @@ def qtToMaya(widget):
         ) 
     )
 
+
 # ----------------------------------------------------------------------------
+
 
 def getChannelBox():
     """
@@ -63,6 +78,7 @@ def getChannelBox():
     """
     channelBox = mayaToQT(CHANNELBOX)
     return channelBox
+
 
 def getChannelBoxMenu():
     """
@@ -80,13 +96,15 @@ def getChannelBoxMenu():
             mel.eval(cmd)
             return child
 
+
 # ----------------------------------------------------------------------------
+
 
 class SearchWidget(QWidget):
     def __init__( self, parent, threshold=0.75):
         # initialize
         QWidget.__init__(self, parent)
-        self.setObjectName(CHANNELBOXS_SEARCH)
+        self.setObjectName(CHANNELBOX_SEARCH)
         
         # variable
         self.threshold = threshold
@@ -293,3 +311,47 @@ class SearchWidget(QWidget):
                     attrRegex=attr, 
                     attrBgColor=colour
                 )
+
+
+# ----------------------------------------------------------------------------
+
+
+def install(threshold=0.75):
+    """
+    Add the search interface and colouring functionality to Maya's main
+    channel box. If channelBoxPlus is already installed a RuntimeError
+    exception will be thrown. A threshold can be set, this threshold
+    determines when the attributes should change colour. the higher the
+    threshold the more the 2 attributes will have to match up to stay the same
+    colour.
+
+    :param float threshold: Threshold for attribute colour change
+    :raises RuntimeError: When the channel box plus is already installed.
+    """
+    global CHANNELBOX_PLUS
+
+    # validate channel box plus
+    if CHANNELBOX_PLUS:
+        raise RuntimeError("Channel box plus is already installed!")
+
+    # get channel box
+    channelBox = getChannelBox()
+
+    # get channel box layout
+    parent = channelBox.parent()
+    layout = parent.layout()
+    layout.setSpacing(0)
+
+    # initialize search widget
+    CHANNELBOX_PLUS = SearchWidget(parent, threshold)
+
+    # add search widget to layout
+    if type(layout) == QLayout:
+        item = layout.itemAt(0)
+        widget = item.widget()
+
+        layout.removeWidget(widget)
+        layout.addWidget(CHANNELBOX_PLUS)
+        layout.addWidget(widget)
+    else:
+        layout.insertWidget(0, CHANNELBOX_PLUS)

@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>rjChannelBoxPlus.ui module &#8212; rjChannelBoxPlus  &#39;&#39; documentation</title>
+    <title>channelBoxPlus.ui module &#8212; channelBoxPlus  &#39;&#39; documentation</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -34,7 +34,7 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">rjChannelBoxPlus  &#39;&#39; documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">channelBoxPlus  &#39;&#39; documentation</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -43,29 +43,29 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="module-rjChannelBoxPlus.ui">
-<span id="rjchannelboxplus-ui-module"></span><h1>rjChannelBoxPlus.ui module<a class="headerlink" href="#module-rjChannelBoxPlus.ui" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-channelBoxPlus.ui">
+<span id="channelboxplus-ui-module"></span><h1>channelBoxPlus.ui module<a class="headerlink" href="#module-channelBoxPlus.ui" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
-<dt id="rjChannelBoxPlus.ui.SearchWidget">
-<em class="property">class </em><code class="descclassname">rjChannelBoxPlus.ui.</code><code class="descname">SearchWidget</code><span class="sig-paren">(</span><em>parent</em>, <em>threshold=0.75</em><span class="sig-paren">)</span><a class="headerlink" href="#rjChannelBoxPlus.ui.SearchWidget" title="Permalink to this definition">¶</a></dt>
+<dt id="channelBoxPlus.ui.SearchWidget">
+<em class="property">class </em><code class="descclassname">channelBoxPlus.ui.</code><code class="descname">SearchWidget</code><span class="sig-paren">(</span><em>parent</em>, <em>threshold=0.75</em><span class="sig-paren">)</span><a class="headerlink" href="#channelBoxPlus.ui.SearchWidget" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PySide.QtGui.QWidget</span></code></p>
 <dl class="method">
-<dt id="rjChannelBoxPlus.ui.SearchWidget.clear">
-<code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rjChannelBoxPlus.ui.SearchWidget.clear" title="Permalink to this definition">¶</a></dt>
+<dt id="channelBoxPlus.ui.SearchWidget.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#channelBoxPlus.ui.SearchWidget.clear" title="Permalink to this definition">¶</a></dt>
 <dd><p>Clear the text in the search line edit.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="rjChannelBoxPlus.ui.SearchWidget.deleteLater">
-<code class="descname">deleteLater</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rjChannelBoxPlus.ui.SearchWidget.deleteLater" title="Permalink to this definition">¶</a></dt>
+<dt id="channelBoxPlus.ui.SearchWidget.deleteLater">
+<code class="descname">deleteLater</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#channelBoxPlus.ui.SearchWidget.deleteLater" title="Permalink to this definition">¶</a></dt>
 <dd><p>Subclass the deleteLater function to first remove the callback, 
 this callback shouldn’t be floating around and should be deleted
 with the widget.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="rjChannelBoxPlus.ui.SearchWidget.matchSearch">
-<code class="descname">matchSearch</code><span class="sig-paren">(</span><em>attr</em>, <em>searchArguments</em><span class="sig-paren">)</span><a class="headerlink" href="#rjChannelBoxPlus.ui.SearchWidget.matchSearch" title="Permalink to this definition">¶</a></dt>
+<dt id="channelBoxPlus.ui.SearchWidget.matchSearch">
+<code class="descname">matchSearch</code><span class="sig-paren">(</span><em>attr</em>, <em>searchArguments</em><span class="sig-paren">)</span><a class="headerlink" href="#channelBoxPlus.ui.SearchWidget.matchSearch" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check if all search arguments exist in the attribute string.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -88,8 +88,8 @@ with the widget.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="rjChannelBoxPlus.ui.SearchWidget.registerCallback">
-<code class="descname">registerCallback</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rjChannelBoxPlus.ui.SearchWidget.registerCallback" title="Permalink to this definition">¶</a></dt>
+<dt id="channelBoxPlus.ui.SearchWidget.registerCallback">
+<code class="descname">registerCallback</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#channelBoxPlus.ui.SearchWidget.registerCallback" title="Permalink to this definition">¶</a></dt>
 <dd><p>Register a callback to run the update function every time the
 selection list is modified.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -105,27 +105,27 @@ selection list is modified.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="rjChannelBoxPlus.ui.SearchWidget.removeCallback">
-<code class="descname">removeCallback</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rjChannelBoxPlus.ui.SearchWidget.removeCallback" title="Permalink to this definition">¶</a></dt>
+<dt id="channelBoxPlus.ui.SearchWidget.removeCallback">
+<code class="descname">removeCallback</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#channelBoxPlus.ui.SearchWidget.removeCallback" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove the callback that updates the ui every time the selection
 list is modified.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="rjChannelBoxPlus.ui.SearchWidget.staticMetaObject">
-<code class="descname">staticMetaObject</code><em class="property"> = &lt;PySide.QtCore.QMetaObject object&gt;</em><a class="headerlink" href="#rjChannelBoxPlus.ui.SearchWidget.staticMetaObject" title="Permalink to this definition">¶</a></dt>
+<dt id="channelBoxPlus.ui.SearchWidget.staticMetaObject">
+<code class="descname">staticMetaObject</code><em class="property"> = &lt;PySide.QtCore.QMetaObject object&gt;</em><a class="headerlink" href="#channelBoxPlus.ui.SearchWidget.staticMetaObject" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
-<dt id="rjChannelBoxPlus.ui.SearchWidget.update">
-<code class="descname">update</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#rjChannelBoxPlus.ui.SearchWidget.update" title="Permalink to this definition">¶</a></dt>
+<dt id="channelBoxPlus.ui.SearchWidget.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#channelBoxPlus.ui.SearchWidget.update" title="Permalink to this definition">¶</a></dt>
 <dd><p>Update the main channel box with the input data, filter attributes 
 based on the search term and colour user attributes.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="rjChannelBoxPlus.ui.SearchWidget.updateColour">
-<code class="descname">updateColour</code><span class="sig-paren">(</span><em>nodes</em><span class="sig-paren">)</span><a class="headerlink" href="#rjChannelBoxPlus.ui.SearchWidget.updateColour" title="Permalink to this definition">¶</a></dt>
+<dt id="channelBoxPlus.ui.SearchWidget.updateColour">
+<code class="descname">updateColour</code><span class="sig-paren">(</span><em>nodes</em><span class="sig-paren">)</span><a class="headerlink" href="#channelBoxPlus.ui.SearchWidget.updateColour" title="Permalink to this definition">¶</a></dt>
 <dd><p>Loop over the selected objects user defined attributes, and generate 
 a colour for them, nodeRegex is not used because it slows down the 
 displaying of the the Channel Box in scenes with many user defined 
@@ -141,8 +141,8 @@ attributes.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="rjChannelBoxPlus.ui.SearchWidget.updateSearch">
-<code class="descname">updateSearch</code><span class="sig-paren">(</span><em>matchString</em>, <em>nodes</em><span class="sig-paren">)</span><a class="headerlink" href="#rjChannelBoxPlus.ui.SearchWidget.updateSearch" title="Permalink to this definition">¶</a></dt>
+<dt id="channelBoxPlus.ui.SearchWidget.updateSearch">
+<code class="descname">updateSearch</code><span class="sig-paren">(</span><em>matchString</em>, <em>nodes</em><span class="sig-paren">)</span><a class="headerlink" href="#channelBoxPlus.ui.SearchWidget.updateSearch" title="Permalink to this definition">¶</a></dt>
 <dd><p>Loop over all keyable attributes and match them with the search string.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -161,8 +161,8 @@ attributes.</p>
 </dd></dl>
 
 <dl class="function">
-<dt id="rjChannelBoxPlus.ui.getChannelBox">
-<code class="descclassname">rjChannelBoxPlus.ui.</code><code class="descname">getChannelBox</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rjChannelBoxPlus.ui.getChannelBox" title="Permalink to this definition">¶</a></dt>
+<dt id="channelBoxPlus.ui.getChannelBox">
+<code class="descclassname">channelBoxPlus.ui.</code><code class="descname">getChannelBox</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#channelBoxPlus.ui.getChannelBox" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get ChannelBox, convert the main channel box to QT.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -177,8 +177,8 @@ attributes.</p>
 </dd></dl>
 
 <dl class="function">
-<dt id="rjChannelBoxPlus.ui.getChannelBoxMenu">
-<code class="descclassname">rjChannelBoxPlus.ui.</code><code class="descname">getChannelBoxMenu</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rjChannelBoxPlus.ui.getChannelBoxMenu" title="Permalink to this definition">¶</a></dt>
+<dt id="channelBoxPlus.ui.getChannelBoxMenu">
+<code class="descclassname">channelBoxPlus.ui.</code><code class="descname">getChannelBoxMenu</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#channelBoxPlus.ui.getChannelBoxMenu" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get ChannelBox, convert the main channel box to QT and return the QMenu 
 which is part of the channel box’ children.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -194,8 +194,29 @@ which is part of the channel box’ children.</p>
 </dd></dl>
 
 <dl class="function">
-<dt id="rjChannelBoxPlus.ui.mayaToQT">
-<code class="descclassname">rjChannelBoxPlus.ui.</code><code class="descname">mayaToQT</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#rjChannelBoxPlus.ui.mayaToQT" title="Permalink to this definition">¶</a></dt>
+<dt id="channelBoxPlus.ui.install">
+<code class="descclassname">channelBoxPlus.ui.</code><code class="descname">install</code><span class="sig-paren">(</span><em>threshold=0.75</em><span class="sig-paren">)</span><a class="headerlink" href="#channelBoxPlus.ui.install" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add the search interface and colouring functionality to Maya’s main
+channel box. If channelBoxPlus is already installed a RuntimeError
+exception will be thrown. A threshold can be set, this threshold
+determines when the attributes should change colour. the higher the
+threshold the more the 2 attributes will have to match up to stay the same
+colour.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>threshold</strong> (<em>float</em>) – Threshold for attribute colour change</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><strong>RuntimeError</strong> – When the channel box plus is already installed.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="channelBoxPlus.ui.mayaToQT">
+<code class="descclassname">channelBoxPlus.ui.</code><code class="descname">mayaToQT</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#channelBoxPlus.ui.mayaToQT" title="Permalink to this definition">¶</a></dt>
 <dd><p>Maya -&gt; QWidget</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -212,8 +233,8 @@ which is part of the channel box’ children.</p>
 </dd></dl>
 
 <dl class="function">
-<dt id="rjChannelBoxPlus.ui.qtToMaya">
-<code class="descclassname">rjChannelBoxPlus.ui.</code><code class="descname">qtToMaya</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="headerlink" href="#rjChannelBoxPlus.ui.qtToMaya" title="Permalink to this definition">¶</a></dt>
+<dt id="channelBoxPlus.ui.qtToMaya">
+<code class="descclassname">channelBoxPlus.ui.</code><code class="descname">qtToMaya</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="headerlink" href="#channelBoxPlus.ui.qtToMaya" title="Permalink to this definition">¶</a></dt>
 <dd><p>QWidget -&gt; Maya name</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -240,7 +261,7 @@ which is part of the channel box’ children.</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/rjChannelBoxPlus.ui.rst.txt"
+      <li><a href="_sources/channelBoxPlus.ui.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -267,11 +288,11 @@ which is part of the channel box’ children.</p>
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">rjChannelBoxPlus  &#39;&#39; documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">channelBoxPlus  &#39;&#39; documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2017, &#39;Robert Joosten&#39;.
+        &#169; Copyright 2018, &#39;Robert Joosten&#39;.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
     </div>
   </body>

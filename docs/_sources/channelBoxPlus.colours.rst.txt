@@ -1,0 +1,7 @@
+channelBoxPlus\.colours module
+==============================
+
+.. automodule:: channelBoxPlus.colours
+    :members:
+    :undoc-members:
+    :show-inheritance:

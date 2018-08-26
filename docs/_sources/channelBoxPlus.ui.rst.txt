@@ -1,0 +1,7 @@
+channelBoxPlus\.ui module
+=========================
+
+.. automodule:: channelBoxPlus.ui
+    :members:
+    :undoc-members:
+    :show-inheritance:

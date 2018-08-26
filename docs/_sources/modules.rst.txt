@@ -1,7 +1,7 @@
-rjChannelBoxPlus
-================
+channelBoxPlus
+==============
 
 .. toctree::
    :maxdepth: 4
 
-   rjChannelBoxPlus
+   channelBoxPlus
