@@ -3,3 +3,4 @@
 + MAYAVERSION:2016 channelBoxPlus 0.8.3 <PATH>
 + MAYAVERSION:2017 channelBoxPlus 0.8.3 <PATH>
 + MAYAVERSION:2018 channelBoxPlus 0.8.3 <PATH>
++ MAYAVERSION:2019 channelBoxPlus 0.8.3 <PATH>
